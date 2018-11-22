@@ -1,0 +1,5 @@
+git init                       -->            turns a folder into git repository
+git status                     -->            inspects the contents of working directory and staging area
+git add file_name              -->            adds the 'file_name' from working directory to staging area
+git commit                     -->            permanently stores changes from staging area to repository
+git diff                       -->            shows the file difference between working directory and staging area
