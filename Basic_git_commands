@@ -3,3 +3,13 @@ git status                     -->            inspects the contents of working d
 git add file_name              -->            adds the 'file_name' from working directory to staging area
 git commit                     -->            permanently stores changes from staging area to repository
 git diff                       -->            shows the file difference between working directory and staging area
+git log                        -->            shows the details of all done commits in git repository
+
+
+Definition of 'head commit'                        -->    'In many cases, the most recently made commit is head commit.'
+git show HEAD                  -->            shows the head commit
+
+
+git checkout HEAD a.txt        -->            Dicard changes in working directory of file name  'a.txt'
+git reset HEAD a.txt          -->            Unstages file changes from the staging area of file name 'a.txt' to working directory
+
