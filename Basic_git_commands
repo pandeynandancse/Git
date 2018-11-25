@@ -1,6 +1,7 @@
 git init                       -->            turns a folder into git repository
 git status                     -->            inspects the contents of working directory and staging area
 git add file_name              -->            adds the 'file_name' from working directory to staging area
+git add file_name1 file_name2  -->            adds the multiple file from working directory to staging area
 git commit                     -->            permanently stores changes from staging area to repository
 git diff                       -->            shows the file difference between working directory and staging area
 git log                        -->            shows the details of all done commits in git repository
@@ -11,5 +12,18 @@ git show HEAD                  -->            shows the head commit
 
 
 git checkout HEAD a.txt        -->            Dicard changes in working directory of file name  'a.txt'
-git reset HEAD a.txt          -->            Unstages file changes from the staging area of file name 'a.txt' to working directory
+git reset HEAD a.txt           -->            Unstages file changes from the staging area of file name 'a.txt' to working directory
+git reset commit_SHA           -->            Resets to a previous commit in your commit history. commit_SHA contains first 6 chars of commit id.
+
+
+
+
+                                                 Branching in Git
+                                        
+                                        
+git branch                     -->             Lists all a Git repository's branches.
+git branch branch_name         -->             Creates a new branch.
+git checkout branch_name       -->             Used to switch from one branch to another.
+git merge branch_name          -->             Used to join file changes from one branch to another.
+git branch -d branch_name      -->             Deletes the branch specified.
 
