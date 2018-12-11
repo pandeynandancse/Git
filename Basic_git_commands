@@ -4,7 +4,7 @@ git add file_name              -->            adds the 'file_name' from working 
 git add file_name1 file_name2  -->            adds the multiple file from working directory to staging area
 git commit                     -->            permanently stores changes from staging area to repository
 git diff                       -->            shows the file difference between working directory and staging area
-git log                        -->            shows the details of all done commits in git repository
+git log                        -->            shows the details of all done commits in git repository of all branches.
 
 
 Definition of 'head commit'                        -->    'In many cases, the most recently made commit is head commit.'
