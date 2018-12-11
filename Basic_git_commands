@@ -13,9 +13,15 @@ git show HEAD                  -->            shows the head commit
 
 git checkout HEAD a.txt        -->            Dicard head changes in working directory of file name  'a.txt'
 git reset HEAD a.txt           -->            Unstages file changes from the staging area of file name 'a.txt' to working directory
+
 git reset commit_SHA           -->            Resets to a previous commit in your commit history. commit_SHA contains first 6 chars of commit id.
+                                              And brings that commit back to working directory to add or discard , see git status by typing on terminal.
+                                              And it also deletes all the commit history till that reset point sha.
+
 git checkout -- third.txt      -->            for repository.
 git add ./                     -->            Adds all files from working dirrectory to staging directory.
+
+
 
 
                                                  Branching in Git
