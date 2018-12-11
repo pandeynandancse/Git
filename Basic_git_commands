@@ -37,3 +37,6 @@ git fetch                       -->             Fetches work from the remote int
 git merge origin/master         -->             Merges origin/master into your local branch.
 git push origin <branch_name>   -->             Pushes a local branch to the origin remote.
                                                 
+git pull origin master          -->             If there is any change in remote copy then you have to update it with your local copy
+                                                so do this as 'fetch and merge takes two steps .It does the same work  in one step.
+                                                
