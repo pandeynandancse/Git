@@ -37,8 +37,12 @@ git branch -d branch_name      -->             Deletes the branch specified.
                                             
                                                 Cloning from Github
                                                 
+                                                
 git clone                       -->             Creates a local copy of a remote.
-git remote -v                   -->             Lists a Git project's remotes.
+git remote -v                   -->             Lists a Git project's remotes or to check what is project's origin.
+                                                we can see that it gives you the origin name from where you have cloned the  corresponding project.
+
+
 git fetch                       -->             Fetches work from the remote into the local copy.
 git merge origin/master         -->             Merges origin/master into your local branch.
 git push origin <branch_name>   -->             Pushes a local branch to the origin remote.
