@@ -24,8 +24,10 @@ git add ./                     -->            Adds all files from working dirrec
 
 
 
+
                                                  Branching in Git
-                                        
+              
+              
                                         
 git branch                     -->             Lists all a Git repository's branches.
 git branch branch_name         -->             Creates a new branch.
