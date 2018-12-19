@@ -36,6 +36,9 @@ git merge branch_name          -->             Used to join file changes from on
 git branch -d branch_name      -->             Deletes the branch specified.
 
 
+
+
+
                                             
                                                 Cloning from Github
                                                 
