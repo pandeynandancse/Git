@@ -18,6 +18,7 @@ git reset commit_SHA           -->            Resets to a previous commit in you
                                               And brings that commit back to working directory to add or discard , see git status by typing on terminal.
                                               And it also deletes all the commit history till that reset point sha.
 
+
 git checkout -- third.txt      -->            for repository.
 git add ./                     -->            Adds all files from working dirrectory to staging directory.
 
