@@ -6,7 +6,6 @@ git commit                     -->            permanently stores changes from st
 git diff                       -->            shows the file difference between working directory and staging area
 git log                        -->            shows the details of all done commits in git repository of all branches.
 
-
 Definition of 'head commit'                        -->    'In many cases, the most recently made commit is head commit.'
 git show HEAD                  -->            shows the head commit
 
@@ -34,7 +33,6 @@ git branch branch_name         -->             Creates a new branch.
 git checkout branch_name       -->             Used to switch from one branch to another.
 git merge branch_name          -->             Used to join file changes from one branch to another.
 git branch -d branch_name      -->             Deletes the branch specified.
-
 
 
 
