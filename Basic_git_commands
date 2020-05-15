@@ -111,7 +111,28 @@ git merge branch_name          -->             Used to join file changes from on
 git branch -d branch_name      -->             Deletes the branch specified.
 
 
+git branch --merged            -->             gives name of branches that has been merged 
+git branch --no-merged         -->             gives name of branches that has not been merged
 
+
+git push -d origin branch_name       -->>            remote-origin's branch branch_name will be  deleted.
+
+
+
+
+
+
+
+
+
+
+                                    pushing local branch to remote
+                                    
+ git push origin branch_name                           -->>   push in branch_name of remote 
+ git push origin local_brach_name:remote_branch_name    -->>  local_branch_name is pushed as remote_branch_name in remote(renaming of local branch in remote)
+
+Recommedation is that -->> if u want to push on master brach of remote then locally you should be on master branch
+                          and if want to push on another branch then locally be on that branch.
 
 
 
@@ -135,8 +156,8 @@ git remote -v                   -->             Lists a Git project's remotes or
 
 git fetch                       -->             Fetches work from the remote into the local copy.
 git merge origin/master         -->             Merges origin/master into your local branch.
-git push origin <branch_name>   -->             Pushes a local branch to the origin remote.
+git push origin <branch_name>   -->             Pushes a local branch to the origin-remote's branch name.
                                                 
-git pull origin master          -->             If there is any change in remote copy then you have to update it with your local copy
+git pull origin master          -->             If there is any change in remote copy of master branch then you have to update it with your local copy
                                                 so do this as 'fetch and merge takes two steps .It does the same work  in one step.
                                                 
