@@ -34,7 +34,7 @@ reset vs checkout ----->>>>>     reset resets the index without touching the wor
                                 2. Use checkout if you want to discard changes to unstaged file/s.
 
 git checkout -f      --->>>> back to last commit discarding all changes that has been done in working directory i.e. unstaged file  --->>very dangerous 
-git reset            --->>>> back to last commit from staging area without changing working directory
+git reset            --->>>> back to last commit from staging area with changing working directory
 
 
 
