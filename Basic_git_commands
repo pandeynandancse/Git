@@ -4,22 +4,98 @@ git add file_name              -->            adds the 'file_name' from working 
 git add file_name1 file_name2  -->            adds the multiple file from working directory to staging area
 git commit                     -->            permanently stores changes from staging area to repository
 git diff                       -->            shows the file difference between working directory and staging area
+git diff --staged              -->            shows the difference between  staged and last commit
+git diff --cached               -->           staged is synonym to cached
+git diff HEAD                  -->            shows the difference between  working and last commit
 git log                        -->            shows the details of all done commits in git repository of all branches.
 
 Definition of 'head commit'                        -->    'In many cases, the most recently made commit is head commit.'
 git show HEAD                  -->            shows the head commit
 
 
-git checkout HEAD a.txt        -->            Dicard head changes in working directory of file name  'a.txt'
-git reset HEAD a.txt           -->            Unstages file changes from the staging area of file name 'a.txt' to working directory
+
+git reset HEAD a.txt           -->            Unstages file changes from the staging area of file name 'a.txt' to working directory i.e back to working directory from staging area
 
 git reset commit_SHA           -->            Resets to a previous commit in your commit history. commit_SHA contains first 6 chars of commit id.
                                               And brings that commit back to working directory to add or discard , see git status by typing on terminal.
                                               And it also deletes all the commit history till that reset point sha.
 
 
-git checkout -- third.txt      -->            for repository.
+
+git checkout HEAD a.txt        -->            Dicard head changes in working directory of file name  'a.txt'
+git checkout -- third.txt      -->            write back contents of third.txt in it from this file's last commit
 git add ./                     -->            Adds all files from working dirrectory to staging directory.
+
+
+
+reset vs checkout ----->>>>>     reset resets the index without touching the working tree, 
+                              while checkout changes the working tree without touching the index.
+                  ----->>>>>>   1. Use reset if you want to undo staging of a modified file.
+                                2. Use checkout if you want to discard changes to unstaged file/s.
+
+git checkout -f      --->>>> back to last commit discarding all changes that has been done in working directory i.e. unstaged file  --->>very dangerous 
+git reset            --->>>> back to last commit from staging area without changing working directory
+
+
+
+
+
+
+                                          Files 
+                                          
+                                          
+                                          
+ git rm file.txt                                 ---> removes file and moves to staged area, no need to do 'add' manually if using git as shown
+ git  mv old_file_name.txt new_file_name.txt     --->  renamed file and moves  to stage area ,no need to do 'add' manually if using git as shown
+ git rm --cached file.txt                        ---> don't track file.txt if it was being tracked before,
+                                                      but remember file is still there although  we have used 'rm' command
+                                                      and when we see 'git status' , it shows file.txt in untracked section
+                                                      but if we want that 'git status' should not show file.txt in untracked section then mention 'file.txt' in '.gitignore' file.
+                  
+                  
+                  
+                  
+                  
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                                    Alias git
+                                       
+                   git config --global alias.st status  ---->>> git status --->> same as  git st                    
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                              
+                                  viewing commit history in detail(get breif overview of commits and diff)
+                                              
+                                              
+    
+git log
+git log -p
+git log -p -2
+git log -p -n
+git log --stat
+git log --pretty=oneline
+git log --pretty=format:"%h -- %an"  ----->>> hash_name -- author name
+git log --pretty=short
+git log --since=2.days          ---->> gives about previous 2 days commits
+git log --since=2.months
+git log --since=2.years
+
+
+
+
+
+
+
+
+
 
 
 
@@ -36,11 +112,23 @@ git branch -d branch_name      -->             Deletes the branch specified.
 
 
 
+
+
+
+
+
+
+
+
+
                                             
                                                 Cloning from Github
                                                 
                                                 
 git clone                       -->             Creates a local copy of a remote.
+
+git remote add origin url    -->                Add local git repository with remote repository's url and given that url name of my choice as  origin. In place of  origin it can be any name but common convention is to use origin
+
 git remote -v                   -->             Lists a Git project's remotes or to check what is project's origin.
                                                 we can see that it gives you the origin name from where you have cloned the  corresponding project.
 
